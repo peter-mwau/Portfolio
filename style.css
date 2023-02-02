@@ -1,0 +1,507 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+*{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.head{
+    background-color: aquamarine;
+    height: 8vh;
+}
+.head .name{
+    color: #000;
+    font-weight: bold;
+    font-size: x-large;
+    margin-left:  10px;
+}
+.head .name span{
+    color: rgb(204, 28, 175);
+}
+.head .nav{
+    margin-right: 0.5em;
+    float: right;
+    margin-right: 0.5em;
+}
+.head .nav li{
+    display: inline-block;
+}
+.head .nav li a{
+    list-style: none;
+    text-decoration: none;
+    margin-left: 0.3em;
+    color: #000;
+    font-weight: bold;
+}
+.head .nav li a:hover{
+    color: rgb(204, 28, 175);
+    /* text-decoration: underline; */
+    transition: all 0.5s ease-in-out;
+}
+.img{
+    background: linear-gradient(rgba(0.5,0,0,0.5),#098),url(../Portfolio/Images/mine.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    color: #fff;
+    padding: 180px 40px;
+}
+.img .text-1{
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.img .text-2{
+    font-weight: bold;
+    font-size: xx-large;
+    margin-bottom: 10px;
+}
+.img .text-3{
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 25px;
+}
+.img .text-3 span{
+    font-weight: bold;
+    color: rgb(14, 231, 25);
+    font-size: 28;
+}
+.img .btn{
+    font-weight: bold;
+    border: solid 0.1em rgb(14, 231, 25);
+    width: fit-content;
+    background-color: rgb(14, 231, 25);
+    padding: 0.2em;
+    margin-top: 0.7em;
+    border-radius: 0.2em;
+}
+.img .btn:hover{
+    transform: rotateY(360deg);
+    transition-delay: 1s;
+    transition-duration: 3s; 
+    background-color: rgb(204, 28, 175);
+    border: solid 0.1em rgb(204, 28, 175);
+}
+.img .btn a{
+    text-decoration: none;
+    color: #fff;
+}
+
+/*--About section*/
+.container{
+    display: flex;
+}
+.about section{
+    font-size: xx-large;
+    margin-left: 50%;
+    height:65px;
+    font-weight: bold;
+    padding-top: 5px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+/* .about section::after{
+    content: "who I am";
+    font-size: small;
+    text-decoration: underline;
+    color: chartreuse;
+    margin: 45px 5px;
+} */
+.about .container .profile{
+    align-items: flex-start;
+}
+.about .container .profile img{
+    height: 400px;
+    width: 450px;
+    margin-left: 18px;
+    border-radius: 0.2em;
+}
+.about .container .con-2{
+    align-items: flex-end;
+    margin-left: 15px;
+    height: 400px;
+    margin-right: 15px;
+    overflow-y: scroll;
+}
+.about .container .con-2::-webkit-scrollbar{
+     width: 4px; 
+    /* opacity: 0; */
+}
+.about .container .con-2 p{
+    text-align: justify;
+}
+.about .container .con-2 .text-3{
+    font-weight: bold;
+}
+.about .container .con-2 .text-3 span{
+    color: rgb(14, 231, 25);
+    font-size: 20px;
+}
+.about .container .con-2 .btn{
+    font-weight: bold;
+    border: solid 0.1em rgb(14, 231, 25);
+    width: fit-content;
+    background-color: rgb(14, 231, 25);
+    padding: 0.2em;
+    margin-top: 0.7em;
+    border-radius: 0.2em;
+}
+.about .container .con-2 .btn:hover{
+    transform: rotateY(360deg);
+    transition-delay: 1s;
+    transition-duration: 3s; 
+    background-color: rgb(204, 28, 175);
+    border: solid 0.1em rgb(204, 28, 175);
+}
+.about .container .con-2 .btn a{
+    text-decoration: none;
+    color: #fff;
+}
+/* Services sectione */
+.serv-section{
+    background: #098;
+    height: 40vh;
+    padding-top: 5px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.serv-section h2{
+    font-weight: 35px;
+    margin-left: 50%;
+    height: 35px;
+}
+.serv-section .con-3{
+    display: flex;
+    height: auto;
+    margin:  2% 2%;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.serv-section .con-3 .sec1{
+    background: rgb(73, 167, 156);
+    border-radius: 0.4em;
+    border: #098 solid ;
+    margin-left: 10px;
+    padding-right: 25px;
+    /* transition: all 0.3s ease; */
+}
+.serv-section .con-3 .sec1:hover{
+    transition: scale(1.05);
+    transition: all 0.3s ease;
+    width: 110%;
+    background: rgb(14, 231, 25);
+}
+.serv-section .con-3 .sec2{
+    background: rgb(73, 167, 156);
+    border-radius: 0.4em;
+    border: #098 solid ;
+    /* transition: all 0.3s ease; */
+}
+.serv-section .con-3 .sec2:hover{
+    transition: scale(1.05);
+    width: 110%;
+    background: rgb(14, 231, 25);
+}
+.serv-section .con-3 .sec3{
+    background: rgb(73, 167, 156);
+    border-radius: 0.4em;
+    border: #098 solid ;
+    margin-right: 10px;
+    /* transition: all 0.3s ease; */
+}
+.serv-section .con-3 .sec3:hover{
+    transition: scale(1.05);
+    transition: all 0.3s ease;
+    width: 95%;
+    background: rgb(14, 231, 25);
+}
+.serv-section .con-3 .sec1 article{
+    font-size: large;
+    font-weight: bold;
+    padding-bottom: 8px;
+    padding-left: 5px;
+}
+.serv-section .con-3 .sec2 article{
+    font-size: large;
+    font-weight: bold;
+    padding-bottom: 8px;
+    padding-left: 5px;
+}
+.serv-section .con-3 .sec3 article{
+    font-size: large;
+    font-weight: bold;
+    padding-bottom: 8px;
+    padding-left: 5px;
+}
+.serv-section .con-3 .sec1 p{
+    padding-left: 8px;
+    width: auto;
+}
+.serv-section .con-3 .sec2 p{
+    padding-left: 8px;
+    width: auto;
+}
+.serv-section .con-3 .sec3 p{
+    padding-left: 8px;
+    width: auto;
+}
+/* Skills-section */
+.skills h2{
+    font-weight: 35px;
+    margin-left: 50%;
+    height: 35px;
+}
+/* .skills h2::after{
+    content: "what i know";
+} */
+.skills .s-con .exp{
+    display: flex;
+    margin-left: 10px;
+    width: auto;
+}
+.skills .s-con .btn{
+    font-weight: bold;
+    border: solid 0.1em rgb(14, 231, 25);
+    width: fit-content;
+    background-color: rgb(14, 231, 25);
+    padding: 0.2em;
+    margin-top: 0.7em;
+    border-radius: 0.2em;
+}
+.skills .s-con .btn:hover{
+    transform: rotateY(360deg);
+    transition-delay: 1s;
+    transition-duration: 3s; 
+    background-color: rgb(204, 28, 175);
+    border: solid 0.1em rgb(204, 28, 175);
+}
+.skills .s-con .btn a{
+    text-decoration: none;
+    color: #fff;
+}
+.skills .s-con .exp .cont{
+    align-items: flex-start;
+    width: 30%;
+}
+.skills .s-con .exp .extend{
+    align-items: flex-end;
+    width: 70%;
+    margin-left: 40px;
+    /* overflow-y: scroll; */
+}
+.skills .s-con .exp .extend .percent{
+    font-weight: bold;
+}
+.skills .s-con .exp .extend .percent span{
+    font-weight: bold;
+    padding-left: 80%;
+    /* margin-bottom: (-100px); */
+}
+.skills .s-con .exp .extend .percent span::after{
+    margin-top: -60%;
+}
+.skills .s-con .exp .extend .percent hr{
+    width: 80%;
+    padding-right: 10px;
+    height: 7px;
+    background-color: rgb(14, 231, 25);
+    border-radius: 0.2em;
+    position: relative;
+}
+.skills .s-con .exp .extend .percent hr::content{
+    /* background-color: 90%; */
+    width: calc(50% - 30px);
+}
+/* Teams sections */
+.teams{
+    background: rgb(73, 167, 156);
+    height: auto;
+}
+.teams .imgs .title h2{
+    font-weight: 35px;
+    margin-left: 50%;
+    height: 35px;
+    padding-top: 10px;
+}
+.teams .imgs .card .box{
+    margin: 10px 20px;
+    display: flex;
+    flex-direction: row;
+    /* align-items: center; */
+    /* justify-content: center; */
+    /* width: 100%; */
+}
+.teams .imgs .card .box img{
+    height: 150px;
+    width: 150px;
+    display: inline-flex;
+    position: relative;
+    border: solid 0.2em rgb(14, 231, 25);
+    border-radius: 50%;
+    object-fit: cover;
+    /* background-size: cover; */
+    background-repeat: no-repeat;
+}
+.teams .imgs .card .box .text{
+    font-weight: bold;
+    padding-left: 5px;
+    font-size: larger;
+    
+}
+.teams .imgs .card .box p{
+    font-style: italic;
+    width: auto;
+    padding-top: 50px;
+}
+
+/* Contacts Section Styling */
+.contacts{
+    height: 50vh;
+}
+.contacts .max-width h2{
+    font-weight: 35px;
+    margin-left: 50%;
+    height: 35px;
+    padding-top: 10px;
+}
+.contact-section{
+    display: flex;
+
+}
+.contact-section.get{
+    align-items: flex-start;
+    width: 40%;
+}
+.getitle p{
+    color: #000;
+    margin-bottom: 0.3em;
+    font-weight: bold;
+    margin-left: 0.4em;
+}
+.get p{
+    margin-left: 0.4em;
+    margin: 10px 5px;
+}
+.myname{
+    margin: 10px 45px;
+}
+.myname label{
+    font-weight: bold;
+    font-size: larger;
+}
+.address{
+    margin: 10px 45px;
+}
+.address label{
+    font-weight: bold;
+    font-size: larger;
+}
+.email{
+    margin: 10px 45px;
+}
+.email label{
+    font-weight: bold;
+    font-size: larger;
+}
+.message p{
+    color: #000;
+    font-weight: bold;
+    margin: 10px 5px;
+}
+.contact-section.message{
+    align-items: flex-end;
+    width: 60%;
+}
+.cds{
+    /* display:inline-block; */
+    margin: 10px 3px;
+    padding-left: 5px;
+    width: 100%;
+    /* width: max-content; */
+}
+.oth{
+    /* width: 100%; */
+    /* display: block; */
+    margin: 10px 3px;
+}
+.oth input{
+    height: 30px;
+    width: 100%;
+}
+.txtarea input{
+    height: 40px;
+    margin-top: 10px;
+}
+.btn{
+    font-weight: bold;
+    border: solid 0.1em rgb(14, 231, 25);
+    width: fit-content;
+    background-color: rgb(14, 231, 25);
+    padding: 0.2em;
+    margin-top: 0.7em;
+    border-radius: 0.2em;
+}
+.btn:hover{
+    transform: rotateY(360deg);
+    transition-delay: 1s;
+    transition-duration: 3s; 
+    background-color: rgb(204, 28, 175);
+    border: solid 0.1em rgb(204, 28, 175);
+}
+.btn a{
+    text-decoration: none;
+    color: #fff;
+}
+#main-footer{
+    background-color: rgb(73, 167, 156);
+    height: 55px;
+    padding: 10px 10px;
+    font-weight: bold;
+}
+#main-footer a{
+    color:rgb(14, 231, 25);
+    text-decoration: none;
+}
+#main-footer a:hover{
+    color:rgb(204, 28, 175);
+    text-decoration: underline;
+}
+/* .contacts .max-width .title::after{
+    content: "get in touch";
+    display: flex;
+    font-size: small;
+    align-items: center;
+    color: rgb(14, 231, 25);
+    text-decoration: underline;
+} */
+
+/* Responsive site at a max-width of 820px */
+@media screen and (max-width: 820){
+    .head{
+        background-color: aquamarine;
+        height: 5vh;
+    }
+}
+
+/* Responsive site at a max-width of 400px */
+@media screen and (max-width: 400){
+    .head{
+        background-color: aquamarine;
+        height: 8vh;
+        width: 100%;
+        margin-right: 0px;
+    }
+    .container{
+        display: block;
+    }
+    .about .container .profile img{
+        width: 100px;
+        margin: 5px;
+        border-radius: 0.3em;
+        width: 100%;
+    }
+    .about .container .con-2{
+        height: 400px;
+        margin-right: 15px;
+        overflow-y: scroll;
+    }
+}
